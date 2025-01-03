@@ -1,56 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import logo from './doneyet-logo.svg';
 
 function App() {
   return (
-    <div className="App" style={{backgroundColor: 'gray'}}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
+    <div className="App">
+      <header>
+        <img src={logo} alt='Done Yet Logo' />
       </header>
+      <div className="todo-list">
+        <div className='todo-uncompleted'>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
+        </div>
+        <div className='concealer'>
+          <hr />
+          <div className="todo-completed">
+            <div className='todo'><span>Todo 4</span><input type='checkbox' checked /><label for='checkbox'></label></div>
+            <div className='todo'><span>Todo 4</span><input type='checkbox' checked /><label for='checkbox'></label></div>
+            <div className='todo'><span>Todo 4</span><input type='checkbox' checked /><label for='checkbox'></label></div>
+          </div>
+        </div>
+      </div>
+      <div className='user-input'>
+        <input type='text' name='user-input'></input>
+        <button className='add-button'></button>
+      </div>
     </div>
   );
 }

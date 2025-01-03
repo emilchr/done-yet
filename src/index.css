@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-color: #5A4B51;
+  --main-color: #92AABC;
+  --input-background: #faf6e2;
+  --accent-color: #f0e9c3;
+  --done-color: #ccf5c3;
+  --checkbox-bg-color: #98c474;
+  --button-color: #ebaf6c;
+}
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,13 +17,24 @@
 /* 2. Remove default margin */
 * {
   margin: 0;
+  
 }
-
+#root {
+  flex: 1;
+}
+html, body {
+  height: 100%;
+}
 body {
+  display: flex;
+  flex-direction: column;
   /* 3. Add accessible line-height */
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  background-color: var(--main-color);
+  color: var(--font-color);
+  
 }
 
 /* 5. Improve media defaults */
@@ -23,8 +44,40 @@ img, picture, video, canvas, svg {
 }
 
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input, textarea, select {
   font: inherit;
+  background-color: var(--input-background);
+  border-radius: .2em;
+  border: 0;
+}
+
+input[type='checkbox'] {
+  display: none; 
+}
+
+input[type="checkbox"] + label::before {
+  content: '';
+  background-color: var(--input-background);
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0;
+  border-radius: .25em;
+  margin: .45em .5em;
+}
+
+input[type="checkbox"]:checked + label::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  text-align: center;
+  content: '\f00c';
+  background-color: var(--checkbox-bg-color);
+}
+
+button {
+  font: inherit;
+  border-radius: .2em;
+  background-color: transparent;
 }
 
 /* 7. Avoid text overflows */
