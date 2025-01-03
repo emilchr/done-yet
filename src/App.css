@@ -12,46 +12,83 @@ header {
   width: 100%;
 }
 
+.toast {
+  border-radius: 0.25em;
+  font-size: 2em;
+  position: absolute;
+  display: flex;
+  margin: 4rem 0;
+  height: 6rem;
+  width: 23rem;
+  background-color: var(--done-color);
+  filter: opacity(0.95);
+  align-items: center;
+  justify-content: center;
+  border-left: 0.5rem solid var(--checkbox-bg-color);
+}
+
 .todo-list {
   padding: 0 1em 5em 1em;
   flex-grow: 1;
 
   span {
-    padding: 0 .25em;
+    padding: 0 0.25em;
   }
 }
 
-.todo-uncompleted {}
+.todo-uncompleted {
+}
 
 .todo {
   display: inline-flex;
   background-color: var(--accent-color);
-  padding: .25em 0;
-  margin: .25em 0;
-  border-radius: .2em;
+  padding: 0.25em 0;
+  margin: 0.25em 0;
+  border-radius: 0.2em;
   width: 100%;
   height: 3em;
   justify-content: space-between;
+  overflow: hidden;
 
   input {
-    margin: 0 .5em;
+    margin: 0 0.5em;
   }
   span {
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
 }
 
-.concealer {}
+.concealer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5em 0;
+
+  hr {
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    height: 1px;
+    overflow: visible;
+  }
+
+  hr::before {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    position: relative;
+    top: -0.6rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f078';
+  }
+}
 
 .todo-completed {
   .todo {
     background-color: var(--done-color);
-    
   }
   span {
     text-decoration: line-through;
   }
-  
 }
 
 .user-input {
@@ -60,30 +97,34 @@ header {
   left: 0;
   display: inline-flex;
   flex-shrink: 0;
-  padding: .5em 3.25%;
+  padding: 0.5em 3.25%;
   justify-content: center;
-  
+
   input {
-    padding: 0 .5em;
+    padding: 0 0.5em;
     height: 3rem;
     border: 0;
     width: 25rem;
   }
+  input:focus {
+    border: 1px solid var(--button-color);
+    outline: none;
+  }
 
-  button{
+  button {
     height: 0;
     width: 0;
     position: relative;
-    top: .75em;
+    top: 0.75em;
     right: 2em;
-    border-top: .75em  solid transparent; 
-    border-left: 1.5em solid var(--button-color); 
-    border-bottom: .75em  solid transparent;
+    border-top: 0.75em solid transparent;
+    border-left: 1.5em solid var(--button-color);
+    border-bottom: 0.75em solid transparent;
     border-right: 0;
   }
   button:hover {
-    border-top: .75em  solid transparent; 
-    border-left: 1.5em solid var(--checkbox-bg-color); 
-    border-bottom: .75em  solid transparent;
+    border-top: 0.75em solid transparent;
+    border-left: 1.5em solid var(--checkbox-bg-color);
+    border-bottom: 0.75em solid transparent;
   }
 }
