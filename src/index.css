@@ -66,12 +66,19 @@ input[type="checkbox"] + label::before {
   margin: .45em .5em;
 }
 
+input[type="checkbox"] + label:hover::before {
+  border: 1px solid var(--checkbox-bg-color);
+}
+
 input[type="checkbox"]:checked + label::before {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   text-align: center;
   content: '\f00c';
   background-color: var(--checkbox-bg-color);
+}
+input[type="checkbox"]:checked + label:hover::before {
+  border: none;
 }
 
 button {

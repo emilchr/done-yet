@@ -19,16 +19,6 @@ function App() {
           <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
           <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
           <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
-          <div className='todo'><span>Todo 1</span><input type='checkbox' /><label for='checkbox'></label></div>
         </div>
         <div className='concealer'>
           <hr />
