@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --font-color: #5A4B51;
-  --main-color: #92AABC;
+  --font-color: #5a4b51;
+  --main-color: #92aabc;
   --input-background: #faf6e2;
   --accent-color: #f0e9c3;
   --done-color: #ccf5c3;
@@ -10,19 +10,22 @@
   --button-color: #ebaf6c;
 }
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* 2. Remove default margin */
 * {
   margin: 0;
-  
 }
 #root {
   flex: 1;
+  min-width: 350px;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
@@ -34,61 +37,72 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--main-color);
   color: var(--font-color);
-  
 }
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
-input, textarea, select {
+input,
+textarea,
+select {
   font: inherit;
   background-color: var(--input-background);
-  border-radius: .2em;
+  border-radius: 0.2em;
   border: 0;
 }
 
 input[type='checkbox'] {
-  display: none; 
+  display: none;
 }
 
-input[type="checkbox"] + label::before {
+input[type='checkbox'] + label::before {
   content: '';
   background-color: var(--input-background);
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
   border: 0;
-  border-radius: .25em;
-  margin: .45em .5em;
+  border-radius: 0.25em;
+  margin: 0.45em 0.5em;
 }
 
-input[type="checkbox"] + label:hover::before {
+input[type='checkbox'] + label:hover::before {
   border: 1px solid var(--checkbox-bg-color);
 }
 
-input[type="checkbox"]:checked + label::before {
+input[type='checkbox']:checked + label::before {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   text-align: center;
   content: '\f00c';
   background-color: var(--checkbox-bg-color);
 }
-input[type="checkbox"]:checked + label:hover::before {
+input[type='checkbox']:checked + label:hover::before {
   border: none;
 }
 
 button {
   font: inherit;
-  border-radius: .2em;
+  border-radius: 0.2em;
   background-color: transparent;
 }
 
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -96,20 +110,26 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 body {
   margin: 0;
-  font-family: "Montserrat", serif;
+  font-family: 'Montserrat', serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
