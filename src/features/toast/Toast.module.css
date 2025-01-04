@@ -1,0 +1,14 @@
+.toast {
+  border-radius: 0.25em;
+  font-size: 2em;
+  position: absolute;
+  display: flex;
+  margin: 4rem 0;
+  height: 6rem;
+  width: 23rem;
+  background-color: var(--done-color);
+  filter: opacity(0.95);
+  align-items: center;
+  justify-content: center;
+  border-left: 0.5rem solid var(--checkbox-bg-color);
+}

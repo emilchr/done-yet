@@ -1,0 +1,20 @@
+.todo {
+  display: inline-flex;
+  background-color: var(--accent-color);
+  margin: 0.25em;
+  border-radius: 0.2em;
+  height: fit-content;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  label {
+    height: 2.4em;
+  }
+}
+@media (min-width: 1024px) {
+  .todo {
+    max-width: 49.2%;
+  }
+}
