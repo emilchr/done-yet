@@ -1,6 +1,5 @@
 .App {
   min-height: 100%;
-
   margin-right: 0.5em;
   display: flex;
   flex-direction: column;
@@ -31,13 +30,10 @@ header {
 }
 
 .todo-list {
-  padding: 0 0.25em 5em 0.25em;
   flex: 1;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-
+  width: 99.6%;
   span {
     padding: 0 0.25em;
   }
@@ -46,7 +42,6 @@ header {
 .todo {
   display: inline-flex;
   background-color: var(--accent-color);
-  padding: 0.25em 0.1em;
   margin: 0.25em;
   border-radius: 0.2em;
   height: fit-content;
@@ -55,12 +50,8 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  input {
-    margin: 0 0.5em;
-  }
-
-  span {
-    margin: 0.5em 0;
+  label {
+    height: 2.4em;
   }
 }
 
@@ -73,8 +64,8 @@ header {
   hr {
     padding-left: 1em;
     margin-bottom: 0.5em;
-    margin-left: 1em;
-    margin-right: 1.25em;
+    margin-left: 1.25em;
+    margin-right: 0.75em;
     height: 1px;
     overflow: visible;
   }
@@ -109,7 +100,7 @@ header {
   .todo {
     background-color: var(--done-color);
   }
-  ¨ span {
+  span {
     text-decoration: line-through;
   }
 }

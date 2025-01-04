@@ -62,7 +62,6 @@ select {
 input[type='checkbox'] {
   display: none;
 }
-
 input[type='checkbox'] + label::before {
   content: '';
   background-color: var(--input-background);
@@ -71,7 +70,7 @@ input[type='checkbox'] + label::before {
   height: 1.5em;
   border: 0;
   border-radius: 0.25em;
-  margin: 0.45em 0.5em;
+  margin: 0.45em 0.45em;
 }
 
 input[type='checkbox'] + label:hover::before {
