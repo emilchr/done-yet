@@ -14,7 +14,7 @@ header {
   min-width: 24rem;
 }
 
-.toast {
+/* .toast {
   border-radius: 0.25em;
   font-size: 2em;
   position: absolute;
@@ -27,9 +27,9 @@ header {
   align-items: center;
   justify-content: center;
   border-left: 0.5rem solid var(--checkbox-bg-color);
-}
+} */
 
-.todo-list {
+/* .todo-list {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -37,9 +37,9 @@ header {
   span {
     padding: 0 0.25em;
   }
-}
+} */
 
-.todo {
+/* .todo {
   display: inline-flex;
   background-color: var(--accent-color);
   margin: 0.25em;
@@ -53,9 +53,9 @@ header {
   label {
     height: 2.4em;
   }
-}
+} */
 
-.show {
+/* .show {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,9 +103,9 @@ header {
   span {
     text-decoration: line-through;
   }
-}
+} */
 
-.user-input {
+/* .user-input {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -144,14 +144,14 @@ header {
     border-left: 1.5em solid var(--checkbox-bg-color);
     border-bottom: 0.75em solid transparent;
   }
-}
+} */
 
 @media (min-width: 1024px) {
   .App {
     gap: 0.5em;
     align-items: center;
   }
-  .todo-list {
+  /* .todo-list {
     padding-top: 5rem;
     width: 63rem;
   }
@@ -162,14 +162,14 @@ header {
   .todo-completed {
     max-height: 30rem;
     overflow: scroll;
-  }
-  .todo {
+  } */
+  /* .todo {
     max-width: 49.2%;
-  }
-  .user-input {
+  } */
+  /* .user-input {
     padding-bottom: 3rem;
   }
   input[type='text'] {
     width: 40rem;
-  }
+  } */
 }

@@ -1,9 +1,12 @@
 import React from 'react';
+import './TodoList.module.css';
+import { Todo } from '../todo/Todo';
 
 export const TodoList = () => {
   return (
     <div className="todo-list">
       <div className="todo-uncompleted">
+        <Todo />
         <div className="todo">
           <span>Todo 1</span>
           <input type="checkbox" />
@@ -73,6 +76,7 @@ export const TodoList = () => {
       <div className="show">
         <hr />
         <div className="todo-completed">
+          <Todo />
           <div className="todo">
             <span>Todo 4</span>
             <input type="checkbox" checked />

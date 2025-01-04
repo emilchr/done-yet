@@ -8,10 +8,9 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
-  label {
-    height: 2.4em;
-  }
+}
+.todo label {
+  height: 2.4em;
 }
 @media (min-width: 1024px) {
   .todo {

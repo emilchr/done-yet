@@ -1,119 +1,18 @@
 import React from 'react';
 import './App.css';
 import logo from './doneyet-logo.svg';
-
+import { UserInput } from './features/userInput/UserInput';
+import { TodoList } from './features/todoList/TodoList';
+import { Toast } from './features/toast/Toast';
 function App() {
   return (
     <div className="App">
       <header>
         <img src={logo} alt="Done Yet Logo" />
-        {/* <div className="toast">Task created!</div> */}
+        <Toast />
       </header>
-      <div className="todo-list">
-        <div className="todo-uncompleted">
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo 1</span>
-            <input type="checkbox" />
-            <label for="checkbox"></label>
-          </div>
-        </div>
-        <div className="show">
-          <hr />
-          <div className="todo-completed">
-            <div className="todo">
-              <span>Todo 4</span>
-              <input type="checkbox" checked />
-              <label for="checkbox"></label>
-            </div>
-            <div className="todo">
-              <span>Todo Test</span>
-              <input type="checkbox" checked />
-              <label for="checkbox"></label>
-            </div>
-            <div className="todo">
-              <span>Todo Test</span>
-              <input type="checkbox" checked />
-              <label for="checkbox"></label>
-            </div>
-            <div className="todo">
-              <span>Todo Test</span>
-              <input type="checkbox" checked />
-              <label for="checkbox"></label>
-            </div>
-            <div className="todo">
-              <span>
-                Todo with too much text for it's own good. Lorem ipsum.
-              </span>
-              <input type="checkbox" checked />
-              <label for="checkbox"></label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="user-input">
-        <input type="text" name="user-input"></input>
-        <button className="add-button"></button>
-      </div>
+      <TodoList />
+      <UserInput />
     </div>
   );
 }

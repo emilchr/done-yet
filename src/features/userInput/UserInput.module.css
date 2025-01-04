@@ -7,36 +7,35 @@
   justify-content: center;
   width: 100%;
   min-width: 24em;
+}
+input {
+  padding: 0 0.5em;
+  height: 3rem;
+  border: 0;
+  width: 25rem;
+}
 
-  input {
-    padding: 0 0.5em;
-    height: 3rem;
-    border: 0;
-    width: 25rem;
-  }
+input:focus {
+  border: 1px solid var(--button-color);
+  outline: none;
+}
 
-  input:focus {
-    border: 1px solid var(--button-color);
-    outline: none;
-  }
+button {
+  height: 0;
+  width: 0;
+  position: relative;
+  top: 0.75em;
+  right: 2em;
+  border-top: 0.75em solid transparent;
+  border-left: 1.5em solid var(--button-color);
+  border-bottom: 0.75em solid transparent;
+  border-right: 0;
+}
 
-  button {
-    height: 0;
-    width: 0;
-    position: relative;
-    top: 0.75em;
-    right: 2em;
-    border-top: 0.75em solid transparent;
-    border-left: 1.5em solid var(--button-color);
-    border-bottom: 0.75em solid transparent;
-    border-right: 0;
-  }
-
-  button:hover {
-    border-top: 0.75em solid transparent;
-    border-left: 1.5em solid var(--checkbox-bg-color);
-    border-bottom: 0.75em solid transparent;
-  }
+button:hover {
+  border-top: 0.75em solid transparent;
+  border-left: 1.5em solid var(--checkbox-bg-color);
+  border-bottom: 0.75em solid transparent;
 }
 @media (min-width: 1024px) {
   .user-input {

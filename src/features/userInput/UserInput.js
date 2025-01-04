@@ -1,4 +1,5 @@
 import React from 'react';
+import './UserInput.module.css';
 
 export const UserInput = () => {
   return (
