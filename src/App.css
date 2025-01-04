@@ -1,6 +1,7 @@
 .App {
   min-height: 100%;
 
+  margin-right: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +47,7 @@ header {
   display: inline-flex;
   background-color: var(--accent-color);
   padding: 0.25em 0.1em;
-  margin: 0.25em 0.25em;
+  margin: 0.25em;
   border-radius: 0.2em;
   height: fit-content;
   overflow: hidden;
@@ -71,7 +72,6 @@ header {
 
   hr {
     padding-left: 1em;
-    /* width: 99.7%; */
     margin-bottom: 0.5em;
     margin-left: 1em;
     margin-right: 1.25em;
@@ -162,7 +162,7 @@ header {
   }
   .todo-list {
     padding-top: 5rem;
-    width: 70em;
+    width: 63rem;
   }
   .todo-uncompleted {
     max-height: 30rem;
@@ -173,7 +173,7 @@ header {
     overflow: scroll;
   }
   .todo {
-    max-width: 49%;
+    max-width: 49.2%;
   }
   .user-input {
     padding-bottom: 3rem;
