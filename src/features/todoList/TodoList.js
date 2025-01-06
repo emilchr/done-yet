@@ -1,107 +1,36 @@
 import React from 'react';
-import './TodoList.module.css';
+import TodoListCSS from './TodoList.module.css';
 import { Todo } from '../todo/Todo';
 
 export const TodoList = () => {
   return (
-    <div className="todo-list">
-      <div className="todo-uncompleted">
+    <div className={TodoListCSS.todoList}>
+      <div className={TodoListCSS.todoUncompleted}>
         <Todo />
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
-        <div className="todo">
-          <span>Todo 1</span>
-          <input type="checkbox" />
-          <label for="checkbox"></label>
-        </div>
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
       </div>
-      <div className="show">
+      <div className={TodoListCSS.show}>
         <hr />
-        <div className="todo-completed">
+        <div className={TodoListCSS.todoCompleted}>
           <Todo />
-          <div className="todo">
-            <span>Todo 4</span>
-            <input type="checkbox" checked />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo Test</span>
-            <input type="checkbox" checked />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo Test</span>
-            <input type="checkbox" checked />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo Test</span>
-            <input type="checkbox" checked />
-            <label for="checkbox"></label>
-          </div>
-          <div className="todo">
-            <span>Todo with too much text for it's own good. Lorem ipsum.</span>
-            <input type="checkbox" checked />
-            <label for="checkbox"></label>
-          </div>
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
         </div>
       </div>
     </div>

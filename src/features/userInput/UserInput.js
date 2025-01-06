@@ -1,11 +1,11 @@
 import React from 'react';
-import './UserInput.module.css';
+import UserInputCSS from './UserInput.module.css';
 
 export const UserInput = () => {
   return (
-    <div className="user-input">
+    <div className={UserInputCSS.userInput}>
       <input type="text" name="user-input"></input>
-      <button className="add-button"></button>
+      <button className={UserInputCSS.addButton}></button>
     </div>
   );
 };

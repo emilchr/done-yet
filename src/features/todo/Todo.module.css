@@ -12,6 +12,7 @@
 .todo label {
   height: 2.4em;
 }
+
 @media (min-width: 1024px) {
   .todo {
     max-width: 49.2%;

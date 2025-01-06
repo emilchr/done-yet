@@ -1,9 +1,9 @@
 import React from 'react';
-import './Todo.module.css';
+import TodoCSS from './Todo.module.css';
 
 export const Todo = () => {
   return (
-    <div className="todo">
+    <div className={TodoCSS.todo}>
       <span>Todo COMPONENT</span>
       <input type="checkbox" />
       <label for="checkbox"></label>

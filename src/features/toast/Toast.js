@@ -1,6 +1,6 @@
 import React from 'react';
-import './Toast.module.css';
+import ToastCSS from './Toast.module.css';
 
 export const Toast = () => {
-  return <div className="toast">Task created!</div>;
+  return <div className={ToastCSS.toast}>Task created!</div>;
 };
