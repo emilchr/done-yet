@@ -21,6 +21,11 @@
   height: 1px;
   overflow: visible;
 }
+hr {
+  border: 0;
+  background-color: var(--font-color);
+  height: 1px;
+}
 .show hr::before {
   background-color: var(--main-color);
   color: var(--font-color);
@@ -51,15 +56,15 @@
 
 @media (min-width: 1024px) {
   .todoList {
-    padding-top: 5rem;
+    padding-top: 1rem;
     width: 63rem;
   }
   .todoUncompleted {
     max-height: 30rem;
-    overflow: scroll;
+    overflow-y: auto;
   }
   .todoCompleted {
     max-height: 30rem;
-    overflow: scroll;
+    overflow-y: auto;
   }
 }

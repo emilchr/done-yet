@@ -21,10 +21,36 @@ export const TodoList = () => {
         <Todo />
         <Todo />
         <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
+        <Todo />
       </div>
       <div className={TodoListCSS.show}>
         <hr />
         <div className={TodoListCSS.todoCompleted}>
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
+          <Todo />
           <Todo />
           <Todo />
           <Todo />
