@@ -1,18 +1,19 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   taskId: 0,
   content: '',
-}
+  isComplete: false,
+};
 
 export const todoSlice = createSlice({
   name: 'todo',
   initialState,
   reducers: {
-    addContent: (state, action) => {
+    completeTodo: (state, action) => {
       state.content = action.payload;
     },
   },
 });
 
-export default todoSlice.reducer
+export default todoSlice.reducer;

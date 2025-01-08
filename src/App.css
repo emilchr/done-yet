@@ -11,7 +11,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 175px;
-  min-width: 24rem;
+  min-width: 100%;
 }
 
 @media (min-width: 1024px) {
