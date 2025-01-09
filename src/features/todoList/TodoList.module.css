@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   width: 99.6%;
+  word-wrap: break-word;
 }
 .todoList span {
   padding: 0 0.25em;
@@ -98,6 +99,9 @@ button:hover {
   .todoList {
     padding-top: 1rem;
     width: 63rem;
+    span {
+      max-width: 90%;
+    }
   }
   .todoUncompleted {
     max-height: 30rem;
