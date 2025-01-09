@@ -33,9 +33,18 @@ export const todoListSlice = createSlice({
       };
       state.todos.push(todo);
     },
+    handleTodo: (state, action) => {
+      const todoIndex = state.todos.findIndex(
+        (todo) => todo.taskId === action.payload
+      );
+
+      !state.todos[todoIndex].isComplete
+        ? (state.todos[todoIndex].isComplete = true)
+        : (state.todos[todoIndex].isComplete = false);
+    },
   },
 });
 
-export const { addTodo } = todoListSlice.actions;
+export const { addTodo, handleTodo } = todoListSlice.actions;
 
 export default todoListSlice.reducer;

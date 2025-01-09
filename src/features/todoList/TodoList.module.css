@@ -108,9 +108,11 @@ button:hover {
     overflow-y: auto;
   }
   .userInput {
+    align-content: center;
+    position: static;
     padding-bottom: 3rem;
-  }
-  input[type='text'] {
-    width: 40rem;
+    justify-items: flex-end;
+    width: 100%;
+    max-width: 60rem;
   }
 }

@@ -47,7 +47,6 @@ export const TodoList = () => {
           </div>
         </div>
       </div>
-
       <form className={TodoListCSS.userInput} onSubmit={handleAddTodo}>
         <input
           type="text"

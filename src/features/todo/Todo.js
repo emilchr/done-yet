@@ -1,11 +1,14 @@
 import React from 'react';
 import TodoCSS from './Todo.module.css';
-import { useSelector } from 'react-redux';
-
-// const isComplete = useSelector((state) => state.todoList.todo.isComplete);
+import { useDispatch } from 'react-redux';
+import { handleTodo } from '../todoList/todoListSlice';
 
 export const Todo = (props) => {
-  const handleClick = (e) => {};
+  const dispatch = useDispatch(handleTodo);
+
+  const handleClick = (e) => {
+    dispatch(handleTodo(props.taskId));
+  };
 
   return (
     <div className={TodoCSS.todo} id={props.taskId}>
