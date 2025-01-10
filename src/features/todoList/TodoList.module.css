@@ -97,8 +97,9 @@ button:hover {
 
 @media (min-width: 1024px) {
   .todoList {
-    padding-top: 1rem;
+    margin-top: 1rem;
     width: 63rem;
+
     span {
       max-width: 90%;
     }
@@ -106,6 +107,11 @@ button:hover {
   .todoUncompleted {
     max-height: 30rem;
     overflow-y: auto;
+    display: grid;
+
+    grid-template-areas: 'row row';
+    grid-template-columns: 49%;
+    gap: 0.25rem;
   }
   .todoCompleted {
     max-height: 30rem;
