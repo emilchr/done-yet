@@ -3,6 +3,7 @@ import TodoListCSS from './TodoList.module.css';
 import { Todo } from '../todo/Todo';
 import { addTodo } from './todoListSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { showToast } from '../toast/toastSlice';
 
 export const TodoList = () => {
   const [input, setInput] = useState('');
@@ -14,6 +15,10 @@ export const TodoList = () => {
     e.preventDefault();
 
     dispatch(addTodo(input));
+    dispatch(showToast({ show: true, type: 'add' }));
+    setTimeout(() => {
+      dispatch(showToast({ show: false, type: 'add' }));
+    }, 2000);
     setInput('');
   };
   return (
