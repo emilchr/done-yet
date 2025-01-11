@@ -61,16 +61,15 @@ hr {
 .userInput {
   position: fixed;
   bottom: 0;
-  left: 0.8em;
+  left: 0.9em;
   display: inline-flex;
-  padding: 0.5em 3.25%;
+  padding: 0.5em 1em;
   justify-content: center;
   width: 100%;
   min-width: 24rem;
 }
 
 input {
-  padding: 0 0.5em;
   height: 3rem;
   border: 0;
   min-width: 100%;
