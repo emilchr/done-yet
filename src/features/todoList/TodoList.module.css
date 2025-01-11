@@ -23,6 +23,7 @@
   overflow: visible;
 }
 hr {
+  margin: 0.25rem 0;
   border: 0;
   background-color: var(--font-color);
   height: 1px;
@@ -36,7 +37,7 @@ hr {
   font-weight: 900;
   content: '\f078';
 }
-.conceal hr::before {
+.hide hr::before {
   background-color: var(--main-color);
   color: var(--font-color);
   position: relative;
@@ -45,8 +46,11 @@ hr {
   font-weight: 900;
   content: '\f077';
 }
-.conceal hr::before {
+.conceal {
   display: none;
+}
+.todoCompleted {
+  margin-top: 0.25em;
 }
 .todoCompleted > div {
   background-color: var(--done-color);

@@ -17,6 +17,7 @@
 
 @media (min-width: 1024px) {
   .todo {
+    margin: 0;
     height: 100%;
     max-width: 98%;
   }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TodoListCSS from './TodoList.module.css';
 import { Todo } from '../todo/Todo';
-import { addTodo } from './todoListSlice';
+import { addTodo, toggleCompleted } from './todoListSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { showToast } from '../toast/toastSlice';
 
@@ -9,6 +9,7 @@ export const TodoList = () => {
   const [input, setInput] = useState('');
 
   const todos = useSelector((state) => state.todoList.todos);
+  const showCompleted = useSelector((state) => state.todoList.showCompleted);
   const dispatch = useDispatch();
 
   const handleAddTodo = (e) => {
@@ -20,6 +21,12 @@ export const TodoList = () => {
       dispatch(showToast({ show: false, type: 'add' }));
     }, 2000);
     setInput('');
+  };
+
+  const toggleDoneList = (e) => {
+    showCompleted
+      ? dispatch(toggleCompleted(false))
+      : dispatch(toggleCompleted(true));
   };
   return (
     <>
@@ -36,9 +43,21 @@ export const TodoList = () => {
               )
           )}
         </div>
-        <div className={TodoListCSS.show}>
-          <hr />
-          <div className={TodoListCSS.todoCompleted}>
+        <div
+          className={
+            showCompleted
+              ? TodoListCSS.show
+              : TodoListCSS.show + ' ' + TodoListCSS.hide
+          }
+        >
+          <hr onClick={toggleDoneList} />
+          <div
+            className={
+              showCompleted
+                ? TodoListCSS.todoCompleted
+                : TodoListCSS.todoCompleted + ' ' + TodoListCSS.conceal
+            }
+          >
             {todos.map(
               (todo) =>
                 todo.isComplete && (

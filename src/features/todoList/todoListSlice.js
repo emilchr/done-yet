@@ -42,9 +42,12 @@ export const todoListSlice = createSlice({
         ? (state.todos[todoIndex].isComplete = true)
         : (state.todos[todoIndex].isComplete = false);
     },
+    toggleCompleted: (state, action) => {
+      state.showCompleted = action.payload;
+    },
   },
 });
 
-export const { addTodo, handleTodo } = todoListSlice.actions;
+export const { addTodo, handleTodo, toggleCompleted } = todoListSlice.actions;
 
 export default todoListSlice.reducer;
